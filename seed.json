@@ -5,12 +5,23 @@
     "content": "blah blah blah",
     "image": "http://net-addicts.com/wp-content/uploads/2015/10/Persian-Cat_02.jpg",
     "tags": ["cat", "persian cat", "large cat"]
-      }, {
+    }, {
     "title": "Blog Post 2",
     "author": "Jeff",
     "date": "03/30/2016",
     "content": "blah blah blah",
     "image": "http://www.petmd.com/sites/default/files/breedopedia/Its%20Magic.jpg",
     "tags": ["cat", "persian cat", "small cat", "black cats"]
+    }],
+  "comments": [{
+    "user": "Lauryn",
+    "date": "03/30/16",
+    "commentary": "This cat sucks!!!!!",
+    "avatar": "http://www.petwave.com/~/media/Images/Center/Breed/Cats/Semi-Long-and-Long-Hair/Persian/Persian-Cat-Sitting.ashx"
+  }, {
+    "user": "Jeff",
+    "date": "03/30/16",
+    "commentary": "blah blah blah blahhhhhh",
+    "avatar": "https://s-media-cache-ak0.pinimg.com/736x/d5/79/ab/d579ab393e1fecae3d71f72a39d34094.jpg"
     }]
-  }
+}

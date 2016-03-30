@@ -3,10 +3,16 @@
 {{new-post savePost="savePost"}}
 
 <div class="blog-post">
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-tile post=post update="update" destroyPost="destroyPost"}}
   {{/each}}
 </div>
 
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+<h2>Comments</h2>
+
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.commentary}}</li>
+    <li>By: {{comment.user}}</li>
+  {{/each}}
+</ul>

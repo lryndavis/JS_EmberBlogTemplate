@@ -6,3 +6,16 @@
 <p>{{post.tags}}</p>
 
 <button {{action 'delete' post}}>Delete Post</button>
+
+<div class="comments">
+  <ul>
+    {{#each model.comments as |comment|}}
+      <li>
+        <img src={{comment.avatar}}/>
+        <p>{{comment.user}}</p>
+        <p>{{comment.commentary}}</p>
+        <p>{{comment.date}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</div>
