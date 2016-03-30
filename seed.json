@@ -1,0 +1,16 @@
+{ "posts": [{
+    "title": "Blog Post 1",
+    "author": "Lauryn",
+    "date": "03/30/2016",
+    "content": "blah blah blah",
+    "image": "http://net-addicts.com/wp-content/uploads/2015/10/Persian-Cat_02.jpg",
+    "tags": ["cat", "persian cat", "large cat"]
+      }, {
+    "title": "Blog Post 2",
+    "author": "Jeff",
+    "date": "03/30/2016",
+    "content": "blah blah blah",
+    "image": "http://www.petmd.com/sites/default/files/breedopedia/Its%20Magic.jpg",
+    "tags": ["cat", "persian cat", "small cat", "black cats"]
+    }]
+  }
