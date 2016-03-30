@@ -8,13 +8,13 @@ export default Ember.Route.extend({
     update(post, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
-          rental.set(key,params[key]);
+          post.set(key,params[key]);
         }
       });
       post.save();
-      this.transitionTo('index');
+      this.transitionTo('post');
     },
-    destroyPost(rental) {
+    destroyPost(post) {
       post.destroyRecord();
       this.transitionTo('index');
     }
