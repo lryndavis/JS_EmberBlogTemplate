@@ -7,5 +7,6 @@
  {{else}}
    <button {{action 'contentShow'}}>Show Post Content</button>
 {{/if}}
+{{update-post post=post update="update"}}
 <p>{{post.tags}}</p>
 <button {{action 'delete' post}}>Delete Post</button>
