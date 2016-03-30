@@ -2,39 +2,39 @@
   <h4>Update {{post.title}}</h4>
     <div>
       <form>
-        <div class="form-group">
+        <fieldset class="form-group">
           <label for="title">Title</label>
-          {{input value=title id="title" placeholder=post.title}}
-        </div>
+          {{input value=title id="title" placeholder=post.title class="form-control"}}
+        </fieldset>
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <label for="author">Author</label>
-          {{input value=author id="author" placeholder=post.author}}
-        </div>
+          {{input value=author id="author" placeholder=post.author class="form-control"}}
+        </fieldset>
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <label for="date">Date</label>
-          {{input value=date id="date" placeholder=post.date}}
-        </div>
+          {{input value=date id="date" placeholder=post.date class="form-control"}}
+        </fieldset>
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <label for="image">Image</label>
-          {{input value=image id="image" placeholder=post.image}}
-        </div>
+          {{input value=image id="image" placeholder=post.image class="form-control"}}
+        </fieldset>
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <label for="content">Content</label>
-          {{input value=content id="content" placeholder=post.content}}
-        </div>
+          {{input value=content id="content" placeholder=post.content class="form-control"}}
+        </fieldset>
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <label for="tags">Tags</label>
-          {{input value=tags id="tags" placeholder=post.tags}}
-        </div>
+          {{input value=tags id="tags" placeholder=post.tags class="form-control"}}
+        </fieldset>
 
-        <button {{action 'update' post}}>Save</button>
+        <button class="btn btn-default" {{action 'update' post}}>Save</button>
       </form>
     </div>
     {{else}}
-      <button {{action 'updatePostForm'}}>Update</button>
+      <button class="btn btn-default" {{action 'updatePostForm'}}>Update</button>
     {{/if}}

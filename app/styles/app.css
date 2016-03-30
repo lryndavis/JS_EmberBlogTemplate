@@ -1,3 +1,18 @@
-h1 {
-  color: red;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic);
+
+
+
+* {
+  font-family: 'Raleway';
+}
+
+img {
+  max-width: 900px;
+  display: block;
+}
+
+
+.post {
+  /*background: #ddd;*/
+  border-bottom: 1px solid #555;
 }
