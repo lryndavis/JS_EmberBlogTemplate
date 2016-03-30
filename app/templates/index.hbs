@@ -7,12 +7,3 @@
     {{post-tile post=post update="update" destroyPost="destroyPost"}}
   {{/each}}
 </div>
-
-<h2>Comments</h2>
-
-<ul>
-  {{#each model.comments as |comment|}}
-    <li>{{comment.commentary}}</li>
-    <li>By: {{comment.user}}</li>
-  {{/each}}
-</ul>

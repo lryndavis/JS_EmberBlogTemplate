@@ -7,9 +7,14 @@
 
 <button {{action 'delete' post}}>Delete Post</button>
 
+
+
 <div class="comments">
+
+<!-- {{new-comment saveComment="saveComment"}} -->
+
   <ul>
-    {{#each model.comments as |comment|}}
+    {{#each post.comments as |comment|}}
       <li>
         <img src={{comment.avatar}}/>
         <p>{{comment.user}}</p>
