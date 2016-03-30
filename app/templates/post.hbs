@@ -2,7 +2,7 @@
 {{update-post post=model update="update"}}
 {{new-comment post=model saveComment="saveComment"}}
 
-{{comment-detail comment=model}}
+
 
 
 
@@ -15,6 +15,7 @@
         <p>{{comment.commentary}}</p>
         <p>{{comment.date}}</p>
         {{update-comment comment=comment post=model updateComment="updateComment"}}
+        {{comment-detail comment=comment post=model destroyComment="destroyComment"}}
       </li>
     {{/each}}
   </ul>

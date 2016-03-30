@@ -8,11 +8,6 @@ export default Ember.Component.extend({
     },
     contentHide: function() {
       this.set('isContentShowing', false);
-    },
-    delete(post) {
-      if (confirm('Are you sure you want to delete this post?')) {
-        this.sendAction('destroyPost', post);
-      }
     }
   }
 });
