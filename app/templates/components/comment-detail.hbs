@@ -1,1 +1,19 @@
-<button class="btn btn-default delete" {{action 'deleteComment' comment}}>Delete Comment</button>
+
+<div class="comments">
+  <h2>Comments</h2>
+  {{new-comment post=model saveComment="saveComment"}}
+    {{#each model.comments as |comment|}}
+        <div class="row comment-block">
+          <div class="comment-meta col-md-4">
+            <img class="avatar" src={{comment.avatar}}/>
+            <h4>{{comment.user}}</h4>
+            {{update-comment comment=comment post=model updateComment="updateComment"}}
+            <button class="btn btn-default delete" {{action 'deleteComment' comment}}>Delete Comment</button>
+          </div>
+          <div class="commentary col-md-8">
+            <p>{{comment.date}}</p>
+            <p class="actual-comment">{{comment.commentary}}</p>
+          </div>
+        </div>
+    {{/each}}
+  </div>
