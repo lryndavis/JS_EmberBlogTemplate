@@ -1,11 +1,13 @@
 <h2>{{post.title}}</h2>
-<p>{{post.author}}</p>
-<p>{{post.date}}</p>
+<div class="post-meta">
+  <p><span>Author:</span> {{post.author}}</p>
+  <p><span>Date:</span> {{post.date}}</p>
+</div>
 <img src={{post.image}} alt="featured-image">
-<p>{{post.content}}</p>
-<p>{{post.tags}}</p>
+<p class="content">{{post.content}}</p>
+<p class="tags"><span class="tag-main">Tags: </span>{{post.tags}}</p>
 
-<button class="btn btn-default" {{action 'delete' post}}>Delete Post</button>
+<button class="btn btn-default delete" {{action 'delete' post}}>Delete Post</button>
 
 
 

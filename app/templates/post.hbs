@@ -1,22 +1,26 @@
 {{post-detail post=model destroyPost="destroyPost"}}
 {{update-post post=model update="update"}}
-{{new-comment post=model saveComment="saveComment"}}
+
 
 
 
 
 
 <div class="comments">
-  <ul>
+  <h2>Comments</h2>
+  {{new-comment post=model saveComment="saveComment"}}
     {{#each model.comments as |comment|}}
-      <li>
-        <img src={{comment.avatar}}/>
-        <p>{{comment.user}}</p>
-        <p>{{comment.commentary}}</p>
-        <p>{{comment.date}}</p>
-        {{update-comment comment=comment post=model updateComment="updateComment"}}
-        {{comment-detail comment=comment post=model destroyComment="destroyComment"}}
-      </li>
+        <div class="row comment-block">
+          <div class="comment-meta col-md-4">
+            <img class="avatar" src={{comment.avatar}}/>
+            <h4>{{comment.user}}</h4>
+            {{update-comment comment=comment post=model updateComment="updateComment"}}
+            {{comment-detail comment=comment post=model destroyComment="destroyComment"}}
+          </div>
+          <div class="commentary col-md-8">
+            <p>{{comment.date}}</p>
+            <p class="actual-comment">{{comment.commentary}}</p>
+          </div>
+        </div>
     {{/each}}
-  </ul>
-</div>
+  </div>
