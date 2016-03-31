@@ -1,8 +1,6 @@
-{{currentDate}}
+
 {{new-post savePost="savePost"}}
 
-<div class="blog-post">
-  {{#each model.posts as |post|}}
-    {{post-tile post=post update="update" destroyPost="destroyPost"}}
-  {{/each}}
+<div class="container">
+  {{post-tile posts=model.posts update="update" destroyPost="destroyPost"}}
 </div>
