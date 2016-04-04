@@ -13,7 +13,17 @@ Project Objectives:
 * Data is stored in and retrieved from Ember Data models and Firebase
 * Implement a one-to-many relationship between posts and comments
 * Routes are defined with dynamic segments when necessary
-* Use computed properties to sort blog posts by most recent 
+* Use computed properties to sort blog posts by most recent
+
+##Technologies Used
+
+* Ember
+* Node
+* Bower
+* Sass
+* Firebase
+* Bootstrap
+* Google Fonts
 
 ## Prerequisites
 
